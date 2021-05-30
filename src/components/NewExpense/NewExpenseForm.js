@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './NewExpenseForm.css';
 
-const NewExpenseForm = ({ onSaveExpense }) => {
+const NewExpenseForm = ({ onSaveExpense, onCancelExpense }) => {
   const [title, setTitle] = useState('');
   const [amount, setAmount] = useState('');
   const [date, setDate] = useState('');
@@ -21,6 +21,8 @@ const NewExpenseForm = ({ onSaveExpense }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!title || !amount || !date) return;
 
     const expenseData = {
       title,
@@ -79,6 +81,9 @@ const NewExpenseForm = ({ onSaveExpense }) => {
       </div>
 
       <div className="new-expense__actions ">
+        <button type="button" onClick={onCancelExpense}>
+          Cancel
+        </button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
