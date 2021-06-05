@@ -1,13 +1,9 @@
-import React from 'react';
+import styled from 'styled-components';
 
-import './Button.css';
+import { __button } from './Button.styles';
 
-const Button = props => {
-  return (
-    <button type={props.type} className="button" onClick={props.onClick}>
-      {props.children}
-    </button>
-  );
-};
+const Button = styled.button`
+  ${__button}
+`;
 
 export default Button;
