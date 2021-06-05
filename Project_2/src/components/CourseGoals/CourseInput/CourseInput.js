@@ -3,8 +3,6 @@ import React, { useRef, useState } from 'react';
 import FormControl from '../../UI/FormControl/FormControl';
 import Button from '../../UI/Button/Button';
 
-import './CourseInput.css';
-
 const CourseInput = (props) => {
   const [enteredValue, setEnteredValue] = useState('');
   const [isValid, setIsValid] = useState(true);
