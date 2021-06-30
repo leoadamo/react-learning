@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import variables from './variables';
 
 const fontsPath = '/fonts/Lato/';
 
@@ -11,7 +12,7 @@ export const __typography = css`
       url(${fontsPath}Lato-Light.woff) format('woff'),
       url(${fontsPath}Lato-Light.woff2) format('woff2');
     font-display: swap;
-    font-weight: 300;
+    font-weight: ${variables.fonts.weight.light};
     font-style: normal;
   }
 
@@ -23,7 +24,7 @@ export const __typography = css`
       url(${fontsPath}Lato-Regular.woff) format('woff'),
       url(${fontsPath}Lato-Regular.woff2) format('woff2');
     font-display: swap;
-    font-weight: 400;
+    font-weight: ${variables.fonts.weight.regular};
     font-style: normal;
   }
 
@@ -35,7 +36,7 @@ export const __typography = css`
       url(${fontsPath}Lato-Bold.woff) format('woff'),
       url(${fontsPath}Lato-Bold.woff2) format('woff2');
     font-display: swap;
-    font-weight: 700;
+    font-weight: ${variables.fonts.weight.bold};
     font-style: normal;
   }
 `;

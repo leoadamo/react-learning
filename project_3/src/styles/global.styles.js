@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import variables from './variables';
 
 import { __typography } from './typography';
 
@@ -16,9 +17,9 @@ export const __global = css`
     height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: Lato, Open Sans, sans-serif;
-    font-weight: 400;
-    line-height: 1;
+    font-family: ${variables.fonts.family.default};
+    font-weight: ${variables.fonts.weight.regular};
+    line-height: ${variables.fonts.lineHeight.normal};
   }
 
   #root {

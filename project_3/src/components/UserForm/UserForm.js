@@ -21,7 +21,7 @@ const UserForm = () => {
 
       <BaseInput
         name="user"
-        label="Username:"
+        label="Username"
         placeholder="Insert your username"
         onChange={(e) => {
           console.log(e.target.value);
@@ -30,7 +30,7 @@ const UserForm = () => {
 
       <BaseInput
         name="role"
-        label="Role:"
+        label="Role"
         placeholder="Insert your current Role"
         onChange={(e) => {
           console.log(e.target.value);
