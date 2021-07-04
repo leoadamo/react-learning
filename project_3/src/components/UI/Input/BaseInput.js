@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { React } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import { __input } from './BaseInput.styles';
@@ -14,14 +14,18 @@ const BaseInput = ({
   hasError,
   errorMessage,
   children,
+  className,
   onChange,
   ...rest
 }) => {
   return (
-    <div css={__input}>
-      <label className="input__label" htmlFor={name}>
-        {label}
-      </label>
+    <div css={__input} className={className}>
+      {label && (
+        <label className="input__label" htmlFor={name}>
+          {label}
+        </label>
+      )}
+
       <input
         id={name}
         name={name}
@@ -46,7 +50,7 @@ BaseInput.defaultProps = {
 BaseInput.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   placeholder: PropTypes.string,
   autoComplete: PropTypes.string,
   value: PropTypes.any,

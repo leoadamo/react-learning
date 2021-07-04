@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { React } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import { __button } from './BaseButton.styles';
@@ -14,6 +14,7 @@ const BaseButton = ({
   styles,
   children,
   onClick,
+  className,
   ...rest
 }) => {
   return (
@@ -21,6 +22,7 @@ const BaseButton = ({
       type={type}
       title={title}
       css={[__button(isPrimary, isSecondary, isDisabled), styles]}
+      className={className}
       onClick={onClick}
     >
       {children ? children : label}

@@ -11,9 +11,9 @@ export const __typography = css`
       url(${fontsPath}Lato-Light.ttf) format('truetype'),
       url(${fontsPath}Lato-Light.woff) format('woff'),
       url(${fontsPath}Lato-Light.woff2) format('woff2');
-    font-display: swap;
     font-weight: ${variables.fonts.weight.light};
     font-style: normal;
+    font-display: swap;
   }
 
   @font-face {
@@ -23,9 +23,9 @@ export const __typography = css`
       url(${fontsPath}Lato-Regular.ttf) format('truetype'),
       url(${fontsPath}Lato-Regular.woff) format('woff'),
       url(${fontsPath}Lato-Regular.woff2) format('woff2');
-    font-display: swap;
     font-weight: ${variables.fonts.weight.regular};
     font-style: normal;
+    font-display: swap;
   }
 
   @font-face {
@@ -35,8 +35,8 @@ export const __typography = css`
       url(${fontsPath}Lato-Bold.ttf) format('truetype'),
       url(${fontsPath}Lato-Bold.woff) format('woff'),
       url(${fontsPath}Lato-Bold.woff2) format('woff2');
-    font-display: swap;
     font-weight: ${variables.fonts.weight.bold};
     font-style: normal;
+    font-display: swap;
   }
 `;

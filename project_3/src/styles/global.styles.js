@@ -17,9 +17,11 @@ export const __global = css`
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: ${variables.colors.primary};
     font-family: ${variables.fonts.family.default};
     font-weight: ${variables.fonts.weight.regular};
     line-height: ${variables.fonts.lineHeight.normal};
+    color: ${variables.colors.white};
   }
 
   #root {

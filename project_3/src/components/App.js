@@ -4,14 +4,17 @@ import { React, Fragment } from 'react';
 
 import { __global } from '../styles/global.styles';
 
-import UserForm from './UserForm/UserForm';
+import BaseContainer from './UI/Container/BaseContainer';
+import AddTodo from './AddTodo/AddTodo';
 
 const App = () => {
   return (
     <Fragment>
       <Global styles={__global} />
 
-      <UserForm />
+      <BaseContainer>
+        <AddTodo />
+      </BaseContainer>
     </Fragment>
   );
 };
