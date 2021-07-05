@@ -4,8 +4,8 @@ const variables = {
       maxWidth: '500px',
     },
     padding: {
-      mobile: '24px',
-      desktop: '32px',
+      mobile: '32px',
+      desktop: '24px',
     },
   },
   fonts: {

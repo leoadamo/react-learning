@@ -36,7 +36,7 @@ BaseButton.defaultProps = {
 
 BaseButton.propTypes = {
   type: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   title: PropTypes.string,
   isPrimary: PropTypes.bool,
   isSecondary: PropTypes.bool,

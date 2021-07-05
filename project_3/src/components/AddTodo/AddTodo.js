@@ -3,6 +3,7 @@ import React from 'react';
 
 import BaseInput from '../UI/Input/BaseInput';
 import BaseButton from '../UI/Button/BaseButton';
+import Plus from '../Icons/Plus';
 
 import { __wrapper } from './AddTodo.styles';
 
@@ -17,11 +18,13 @@ const AddTodo = () => {
       />
 
       <BaseButton
-        label="ADD"
         className="wrapper__button"
         isPrimary
         onClick={() => console.log('Clicked!')}
-      />
+      >
+        ADD
+        <Plus fill="#FFFFFF" />
+      </BaseButton>
     </div>
   );
 };

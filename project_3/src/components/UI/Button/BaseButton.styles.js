@@ -3,7 +3,10 @@ import { darken } from 'polished';
 import variables from '../../../styles/variables';
 
 export const __button = (isPrimary, isSecondary, isDisabled) => css`
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 6px;
   width: 100%;
   padding: 10px;
   outline: none;
